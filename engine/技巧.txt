@@ -1,0 +1,16 @@
+# 使用cocos命令台创建新项目(quick)
+# 首先使用PYTHON setup.py 更新cocos引擎的环境变量
+cocos new jh -p com.gamejazzy.jh -l lua -d /Users/yourname/project/ --portrait -t quick
+
+# 编译android项目
+cocos compile -p android
+
+# 运行android项目
+cocos run -p android debug
+
+# 编译luac
+cocos luacompile -s src/ -d out/ -e -k testKey123456 -b testSign123456 --disable-compile
+
+
+# XXTEA 新密码 -k q=GJWl^8iSG  -b t@#9ibc0_M8i0
+# stack->setXXTEAKeyAndSign("q=GJWl^8iSG", strlen("q=GJWl^8iSG"), "t@#9ibc0_M8i0", strlen("t@#9ibc0_M8i0"));
